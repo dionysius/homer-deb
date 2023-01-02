@@ -1,0 +1,22 @@
+Source: homer
+Section: web
+Priority: optional
+Build-Depends: debhelper-compat (= 13), yarnpkg
+Maintainer: dionysius <dragon.dionysius@gmail.com>
+Standards-Version: 4.6.1
+Vcs-Git: https://github.com/dionysius/homer-deb.git
+Vcs-Browser: https://github.com/dionysius/homer-deb
+Homepage: https://github.com/bastienwirtz/homer
+Rules-Requires-Root: no
+
+Package: homer
+Architecture: all
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}
+Recommends: ${misc:Recommends}
+Built-Using: ${misc:Built-Using}
+Description: Very simple static homepage for your server
+ Homer is a full static html/js dashboard, based on a simple yaml configuration
+ file. It's meant to be served by an HTTP server.
+ .
+ This package contains the homer frontend data
