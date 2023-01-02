@@ -25,7 +25,7 @@ jobs:
         run: |
           curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
           sudo apt-get install -y nodejs
-          sed -i 's|, yarnpkg||g' debian/control
+          sed -i 's|, yarnpkg||g' source/debian/control
       - name: install packages
         run: |
           sudo apt-get update
