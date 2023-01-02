@@ -1,3 +1,9 @@
+homer (22.11.2-0alpha6) unstable; urgency=medium
+
+  * setup upstream repos for nodejs and yarnpkg without installing first
+
+ -- dionysius <dragon.dionysius@gmail.com>  Tue, 03 Jan 2023 00:47:41 +0100
+
 homer (22.11.2-0alpha5) unstable; urgency=medium
 
   * accidentally removed yarnpkg installation via npm
