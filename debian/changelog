@@ -1,3 +1,9 @@
+homer (22.11.2-0alpha3) unstable; urgency=medium
+
+  * remove yarnpkg as build-depends inside gh actions
+
+ -- dionysius <dragon.dionysius@gmail.com>  Tue, 03 Jan 2023 00:17:13 +0100
+
 homer (22.11.2-0alpha2) unstable; urgency=medium
 
   * typo in forced yarnpkg installation (gh actions)
