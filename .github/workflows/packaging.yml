@@ -21,13 +21,11 @@ jobs:
           fetch-depth: 0
           path: source
       - name: setup node
-        # node is first installed so it is not downloaded twice
+        # first: nvm no bueno in github actions inside rules file, don't know why. node is first installed so it is not downloaded twice. yarnpkg provided with npm, remove from build depends (or it conflicts with its dependencies with nodesource's nodejs)
         run: |
           curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
           sudo apt-get install -y nodejs
-          sudo apt-get download yarnpkg
-          sudo dpkg --force-all -i yarnpkg*.deb
-          sudo npm install -g yarnpkg@npm:yarn --force
+          sed -i 's|, yarnpkg||g' debian/control
       - name: install packages
         run: |
           sudo apt-get update
