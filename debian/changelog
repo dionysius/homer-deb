@@ -1,3 +1,9 @@
+homer (22.11.2-0alpha4) unstable; urgency=medium
+
+  * fix path to source in gh actions
+
+ -- dionysius <dragon.dionysius@gmail.com>  Tue, 03 Jan 2023 00:18:54 +0100
+
 homer (22.11.2-0alpha3) unstable; urgency=medium
 
   * remove yarnpkg as build-depends inside gh actions
