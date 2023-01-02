@@ -20,13 +20,12 @@ jobs:
         with:
           fetch-depth: 0
           path: source
-      - name: setup node
-        # first: nvm no bueno in github actions inside rules file, don't know why. node is first installed so it is not downloaded twice. yarnpkg provided with npm, remove from build depends (or it conflicts with its dependencies with nodesource's nodejs)
+      - name: setup repos
+        # nvm somehow no bueno in github actions inside rules file. Add upstream node and yarnpkg repos
         run: |
           curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
-          sudo apt-get install -y nodejs
-          sudo npm install -g yarnpkg@npm:yarn --force
-          sed -i 's|, yarnpkg||g' source/debian/control
+          curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+          echo "deb https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
       - name: install packages
         run: |
           sudo apt-get update
