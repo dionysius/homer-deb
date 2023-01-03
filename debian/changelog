@@ -1,3 +1,9 @@
+homer (22.11.2-0alpha8) unstable; urgency=medium
+
+  * typo in equivs control file path
+
+ -- dionysius <dragon.dionysius@gmail.com>  Tue, 03 Jan 2023 01:19:32 +0100
+
 homer (22.11.2-0alpha7) unstable; urgency=medium
 
   * offer dummy yarnpkg package to depend on yarn from upstream repo
