@@ -1,3 +1,9 @@
+homer (22.11.2-0alpha9) unstable; urgency=medium
+
+  * forgot source subfolder checkout
+
+ -- dionysius <dragon.dionysius@gmail.com>  Tue, 03 Jan 2023 01:23:59 +0100
+
 homer (22.11.2-0alpha8) unstable; urgency=medium
 
   * typo in equivs control file path
