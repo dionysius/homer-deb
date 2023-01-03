@@ -1,3 +1,9 @@
+homer (22.11.2-2) unstable; urgency=medium
+
+  * config is in assets
+
+ -- dionysius <dragon.dionysius@gmail.com>  Tue, 03 Jan 2023 02:06:21 +0100
+
 homer (22.11.2-1) unstable; urgency=medium
 
   * prepare config location and offer in etc with symlink
