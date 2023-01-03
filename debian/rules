@@ -21,3 +21,8 @@ override_dh_auto_build:
 	yarnpkg build
 
 	dh_auto_build
+
+override_dh_auto_install:
+	mv dist/config.yml.dist dist/config.yml
+
+	dh_auto_install
