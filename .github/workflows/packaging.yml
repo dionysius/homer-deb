@@ -30,7 +30,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y debhelper-compat git-buildpackage equivs
-          equivs-build .github/workflow/yarnpkg.equivs
+          equivs-build .github/workflows/yarnpkg.equivs
           sudo apt install -y ./yarnpkg*.deb
           sudo mk-build-deps -i -r source/debian/control -t "apt-get -y -o Debug::pkgProblemResolver=yes --no-install-recommends --yes"
           sudo rm -f *.deb *.buildinfo *.changes
