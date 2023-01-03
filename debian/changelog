@@ -1,3 +1,9 @@
+homer (22.11.2-1) unstable; urgency=medium
+
+  * prepare config location and offer in etc with symlink
+
+ -- dionysius <dragon.dionysius@gmail.com>  Tue, 03 Jan 2023 01:50:10 +0100
+
 homer (22.11.2-0alpha9) unstable; urgency=medium
 
   * forgot source subfolder checkout
