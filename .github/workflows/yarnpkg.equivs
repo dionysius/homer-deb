@@ -1,0 +1,7 @@
+Package: yarnpkg
+Version: 99:99
+Maintainer: dionysius <dragon.dionysius@gmail.com>
+Architecture: all
+Depends: yarn
+Description: dummy yarnpkg package
+ A dummy package to offer yarnpkg package depending on yarn.
